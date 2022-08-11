@@ -31,7 +31,7 @@ namespace TeamRocketAPI
             services.AddDbContext<ApplicationDBContext>(options =>//EFC define the database of your election
                 options.UseSqlite(Configuration.GetConnectionString("defaultConnection")));
 
-            # services.AddHostedService<CSV>();//service on charge of loading CSV file into db and deleting data
+            //services.AddHostedService<CSV>();//service on charge of loading CSV file into db and deleting data
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer
                 (options => options.TokenValidationParameters = new TokenValidationParameters
                 {
