@@ -1,7 +1,10 @@
 # Team Rocket API using Microsoft Visual Studio 2022
 
+>>If you don't have Microsoft Visul Studio, the API CRUD has been published [here](https://teamrocketapi20220811192015.azurewebsites.net/swagger/index.html) 
+
 **NOTE:** The CSV `pokemon.csv` file has been already upload.
 
+### Download Solution
 Intructions:
 
 - Clone the [repository](https://github.com/wllanos/TeamRocketAPI.git).
@@ -12,9 +15,12 @@ Intructions:
 ```
         //services.AddHostedService<CSV>();//service on charge of loading CSV file into db and deleting data
 ``` 
-
 - Run the solution 
 - Swagger UI will be showed and you can test the CRUD using it or Postman
+- To enable Authorization security in CRUD actions and use JWT, uncomment the line **#14** in `PokemonController.cs.cs` and proceed to use **Accounts** actions listed in Swagger UI to get a **Bearer Token**
+```
+        //[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+```
+**NOTE:** If there is an error related to Read Only database, you must unchecked **Read-only** attribute in `wwwroot` folder 
 
 >>If you have any questions, please let me know wladimir_llanos@hotmail.com
-

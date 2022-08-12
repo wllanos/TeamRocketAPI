@@ -11,7 +11,7 @@ using TeamRocketAPI;
 namespace TeamRocketAPI.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20220811162743_Initial")]
+    [Migration("20220812020419_Initial")]
     partial class Initial
     {
         /// <inheritdoc />

@@ -25,6 +25,7 @@
   <ItemGroup>
     <None Include="..\.editorconfig" Link=".editorconfig" />
     <None Include="wwwroot\pokemon.csv" />
+    <None Include="wwwroot\PokemonUniverse.sqlite" />
   </ItemGroup>
 
 </Project>
